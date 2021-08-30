@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+   border-radius: 2px 1px 21px 15px/15px 21px 1px 1px;
+  
+}
+body{
+   background: linear-gradient(
+      rgba(255, 255, 255, 0.712), 
+      rgba(255, 255, 255, 0.575)
+    ), url('paper.jpeg');
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium';
+}
+
+br{
+  line-height: 10px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr 1.5fr 1.2fr 3fr;
+  grid-template-areas:  "nav nav nav nav"
+                        "sidebar main main main"
+                        "sidebar content1 content2 content3"
+                        "sidebar footer footer footer";
+  grid-gap: .7rem;
+  height: 100vh;
+  overflow: hidden;
+  box-shadow: 20px 38px 34px -26px rgba(252, 252, 252, 0.2);
+  border-radius: 2px 1px 21px 15px/15px 21px 1px 1px;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.712), 
+      rgba(255, 255, 255, 0.575)
+    ), url('paper.jpeg');
+}
+
+nav{
+  background-color: beige;
+  grid-area: nav;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 4px solid rgba(0, 0, 0, 0.829);
+   background-image: url("paper.jpeg");
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 2px 1px 21px 15px/15px 21px 1px 1px;
+}
+
+#sidebar{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: sidebar;
+  border: 4px solid black;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  font-family: Kanit;
+  font-size: 70px;
+  -webkit-text-stroke:10px black;
+	-webkit-text-fill-color: yellow;
+  transition: all 1s ease-in;
+  z-index: 4;
+  overflow: hidden;
+  position: relative;
+  animation: skyline 13s infinite ease alternate;
+  background-color: skyblue;
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 2px 1px 21px 15px/15px 21px 1px 1px;
+}
+
+#sidebar #skyline{
+  position: absolute;
+  bottom:-10px;
+  width: 325px;
+  height: 200px;
+  z-index: -1;
+  overflow: hidden;
+  /*position: absolute;
+  z-index: -1;
+  animation: spin 10s ease-in-out infinite alternate-reverse;
+  overflow: hidden;
+  width: 900px;*/
+}
+
+
+main{
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: main;
+  border: 4px solid black;
+   background-image: url("paper.jpeg");
+  
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.253);
+  border-radius: 2px 1px 21px 15px/15px 21px 1px 1px;
+
+}
+#content1{
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: content1;
+  border: 4px solid black;
+  background: linear-gradient(
+      rgba(255, 111, 0, 0.842), 
+      rgba(255, 230, 0, 0.719)
+    ), url('paper.jpeg');
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 2px 1px 21px 15px/15px 21px 1px 1px;
+  position: relative;
+  overflow: hidden;
+}
+#content2{
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-area: content2;
+  border: 4px solid black;
+  background: linear-gradient(
+      rgba(255, 111, 0, 0.842), 
+      rgba(255, 230, 0, 0.719)
+    ), url('paper.jpeg');
+  box-shadow: 0px 8px 4px -26px hsla(0,0%,0%,.2);
+  border-radius: 2px 1px 21px 15px/15px 21px 1px 1px;
+}
+
+.answer{
+  transform:rotate(-180deg);
+  font-size:15px;
+}
+.answer:hover{
+  transform:rotate(0deg);
+  transition: all 1s;
+ 
+}
+
+
+#content3{
+  background-color: beige;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: content3;
+  border: 4px solid black;
+  background-image: url("paper.jpeg");
+}
+
+.comicbook{
+  display: grid;
+  height: 50vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: lfr;
+  grid-template-areas: ""
+}
+
+#desk{
+  position: absolute;
+  bottom:0px;
+  overflow: hidden;
+  left:0px;
+  width:200px;
+}
+#microscope{
+  position: absolute;
+  width:25px;
+  bottom:105px;
+  left:20px;
+}
+#plaque{
+  position: absolute;
+  bottom:160px;
+  left:20px;
+  width:120px;
+}
+
+#biologist1{
+  position: absolute;
+  bottom:0px;
+  left:660px;
+  width:250px;
+}
+
+
+#biologist2{
+  position: absolute;
+  bottom:0px;
+  left:170px;
+  width:85px;
+}
+
+#question{
+  position: absolute;
+  bottom:130px;
+  left:230px;
+  width:180px;
+}
+#question:hover{
+  width:210px;
+  transition: all 1s;
+}
+
+#debugging{
+  position: absolute;
+  width:170px;
+  bottom:130px;
+  left:480px;
+}
+#debugging:hover{
+  width:210px;
+  transition: all 1s;
+}
+
+
+
+
+
+
+
+
+
+
+/*WORD PUXXLES*/
+.word-puzzles{
+  display: grid;
+   background-image: url("paper.jpeg");
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:  .2fr 1fr;
+  grid-template-areas: "crossword-title crossword-title anagram-title"
+  "crossword-puzzle crossword-wordlist anagram-puzzle";
+  grid-gap: .6rem;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.712), 
+      rgba(255, 255, 255, 0.575)
+    ), url('paper.jpeg');
+  
+}
+
+#crossword-title{
+  background-color: beige;
+  grid-area: crossword-title;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 4px solid black;
+  font-size: 30px;
+  font-family: "Anton";
+  font-weight: 5px;
+  color:rgba(0, 0, 0, 0.931);
+  background: linear-gradient(
+      rgba(255, 111, 0, 0.726), 
+      rgba(204, 7, 7, 0.719)
+    ), url('paper.jpeg');
+ 
+}
+#crossword-puzzle{
+  
+  grid-area: crossword-puzzle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 4px solid black;
+  background: linear-gradient(
+      rgb(0, 0, 0), 
+      rgb(0, 0, 0)
+    ), url('paper.jpeg');
+}
+button{
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: poppins;
+  background-color: lightseagreen;
+  color: white;
+}
+#crossword-wordlist{
+  background: linear-gradient(
+      rgba(219, 205, 205, 0.74), 
+      rgba(201, 193, 197, 0.616)
+    ), url('paper.jpeg');
+  grid-area: crossword-wordlist;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Times New Roman';
+  border: 4px solid rgba(0, 0, 0, 0.938);
+}
+
+#anagram-title{
+  background: linear-gradient(
+      rgba(255, 111, 0, 0.767), 
+      rgba(204, 7, 7, 0.705)
+    ), url('paper.jpeg');
+  grid-area: anagram-title;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 4px solid black;
+  font-family: Anton;
+  font-size: 30px;
+  box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+#anagram-puzzle{
+  grid-area: anagram-puzzle;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  border: 4px solid black;
+  background: linear-gradient(
+      rgba(34, 34, 34, 0.897), 
+      rgba(0, 0, 0, 0.918)
+    ), url('paper.jpeg');
+}
+
+form input{
+  height: 30px;
+  border-radius: 20px;
+}
+
+form{
+  background-color: rgba(165, 165, 165, 0.548);
+  padding: 35px 35px 35px 35px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+
+
+footer{
+ 
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  grid-area: footer;
+  border: 4px solid black;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(
+      rgba(0, 219, 29, 0.822), 
+      rgba(81, 255, 0, 0.794)
+    ), url('paper.jpeg');
+}
+
+#soccer{
+  height:220px;
+  position: absolute;
+}
+#soccer:hover{
+  position: absolute;
+  animation: spin 1s alternate-reverse ease infinite;
+  animation-fill-mode: forwards;
+  height: 320px;
+  overflow: hidden;
+  transition: all 3s;
+}
+
+@keyframes spin{
+  100%{ transform: rotate(360deg);}
+}
+
+@keyframes skyline{
+    0%{ background: linear-gradient(rgba(0, 0, 255, 0.692), #31acd1b2),url("paper.jpeg")}
+   50%{ background: linear-gradient(#eb6a01cc, #d13631c7), url("paper.jpeg")}
+  100%{ background: linear-gradient(#012cebc2, #d13631b2), url("paper.jpeg")}
+}
+
+@media only screen and (max-width: 550px){
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 20%; 
+    grid-template-areas:  "nav"
+                          "sidebar"
+                          "main"
+                          "content1"
+                          "content2"
+                          "content3"               
+                          "footer";
+  }
+
+@media only screen and (max-width: 550px){
+  .word-puzzles{
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 5fr 10fr 5fr; 
+    grid-template-areas:  "crossword-title"
+                          "crossword-puzzle"
+                          "crossword-wordlist"
+                          "anagram-title"
+                          "anagram-puzzle"
+  }
+
+  
+                          
+  
+}
+
+}
